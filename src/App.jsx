@@ -1,0 +1,17 @@
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header.jsx'
+import Modal from './components/Modal.jsx'
+import Home from './pages/Home.jsx'
+import Services from './pages/Services.jsx'
+import ServiceDetail from './pages/ServiceDetail.jsx'
+import CatalogPage from './pages/CatalogPage.jsx'
+import ProductDetail from './pages/ProductDetail.jsx'
+import CalculatorPage from './pages/CalculatorPage.jsx'
+import Reviews from './pages/Reviews.jsx'
+import Contacts from './pages/Contacts.jsx'
+import PortfolioDetail from './pages/PortfolioDetail.jsx'
+import PortfolioPage from './pages/PortfolioPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import NotFound from './pages/NotFound.jsx'
+
+export default function App(){return <><Header/><main><Routes><Route path="/" element={<Home/>}/><Route path="/services" element={<Services/>}/><Route path="/services/:id" element={<ServiceDetail/>}/><Route path="/catalog" element={<CatalogPage/>}/><Route path="/catalog/:id" element={<ProductDetail/>}/><Route path="/calculator" element={<CalculatorPage/>}/><Route path="/about" element={<AboutPage/>}/><Route path="/reviews" element={<Reviews/>}/><Route path="/contacts" element={<Contacts/>}/><Route path="/portfolio" element={<PortfolioPage/>}/><Route path="/portfolio/:id" element={<PortfolioDetail/>}/><Route path="*" element={<NotFound/>}/></Routes></main><Modal/></>}
