@@ -115,3 +115,5 @@ Authorization: Bearer <token>
 4. Start command: `npm start`.
 5. Добавьте переменные окружения из `.env.example`.
 6. Для базы используйте MongoDB Atlas и вставьте connection string в `MONGODB_URI`.
+
+Подробная инструкция проверки и деплоя находится в `DEPLOYMENT.md`.

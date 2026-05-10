@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import dns from 'node:dns'
 
 export default async function connectDB() {
   const mongoUri = process.env.MONGODB_URI
@@ -8,6 +9,7 @@ export default async function connectDB() {
   }
 
   try {
+    dns.setDefaultResultOrder('ipv4first')
     const connection = await mongoose.connect(mongoUri)
     console.log(`MongoDB connected: ${connection.connection.host}`)
   } catch (error) {
