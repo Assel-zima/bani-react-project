@@ -7,7 +7,7 @@ export const protect = asyncHandler(async (req, res, next) => {
 
   if (!header || !header.startsWith('Bearer ')) {
     res.status(401)
-    throw new Error('Authorization token is required')
+    throw new Error('Войдите в аккаунт')
   }
 
   const token = header.split(' ')[1]
@@ -16,7 +16,7 @@ export const protect = asyncHandler(async (req, res, next) => {
 
   if (!user) {
     res.status(401)
-    throw new Error('User from token was not found')
+    throw new Error('Сессия истекла. Войдите снова')
   }
 
   req.user = user
@@ -26,7 +26,7 @@ export const protect = asyncHandler(async (req, res, next) => {
 export const adminOnly = (req, res, next) => {
   if (req.user?.role !== 'admin') {
     res.status(403)
-    next(new Error('Admin role is required'))
+    next(new Error('Недостаточно прав для этого действия'))
     return
   }
 

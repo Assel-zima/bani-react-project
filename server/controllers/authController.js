@@ -16,7 +16,7 @@ export const register = asyncHandler(async (req, res) => {
 
   if (existingUser) {
     res.status(409)
-    throw new Error('Email is already registered')
+    throw new Error('Этот email уже зарегистрирован')
   }
 
   const hashedPassword = await bcrypt.hash(password, 10)
@@ -31,14 +31,14 @@ export const login = asyncHandler(async (req, res) => {
 
   if (!user) {
     res.status(401)
-    throw new Error('Invalid email or password')
+    throw new Error('Неверный email или пароль')
   }
 
   const isPasswordValid = await bcrypt.compare(password, user.password)
 
   if (!isPasswordValid) {
     res.status(401)
-    throw new Error('Invalid email or password')
+    throw new Error('Неверный email или пароль')
   }
 
   res.json(authResponse(user))
