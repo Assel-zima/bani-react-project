@@ -1,10 +1,10 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import classNames from 'classnames'
-import { FaDownload, FaMoon, FaSun, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa'
+import { FaDownload, FaMoon, FaSignInAlt, FaSun, FaTelegramPlane, FaUserCircle, FaWhatsapp } from 'react-icons/fa'
 import { useApp } from '../context/AppContext.jsx'
 
 export default function Header() {
-  const { dark, setDark, setModalOpen } = useApp()
+  const { dark, setDark, setModalOpen, isAuthenticated, user } = useApp()
   const location = useLocation()
   const navigate = useNavigate()
   const isHome = location.pathname === '/'
@@ -52,6 +52,10 @@ export default function Header() {
           >
             {dark ? <FaSun aria-hidden="true" /> : <FaMoon aria-hidden="true" />}
           </button>
+          <NavLink className="auth-nav-link" to={isAuthenticated ? '/profile' : '/login'}>
+            {isAuthenticated ? <FaUserCircle aria-hidden="true" /> : <FaSignInAlt aria-hidden="true" />}
+            <span>{isAuthenticated ? (user?.name || 'Профиль') : 'Войти'}</span>
+          </NavLink>
         </div>
       </nav>
     </header>

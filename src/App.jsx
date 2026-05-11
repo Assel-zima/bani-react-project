@@ -12,6 +12,9 @@ import Contacts from './pages/Contacts.jsx'
 import PortfolioDetail from './pages/PortfolioDetail.jsx'
 import PortfolioPage from './pages/PortfolioPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
+import Login from './pages/Login.jsx'
+import Register from './pages/Register.jsx'
+import Profile from './pages/Profile.jsx'
 import NotFound from './pages/NotFound.jsx'
 
-export default function App(){return <><Header/><main><Routes><Route path="/" element={<Home/>}/><Route path="/services" element={<Services/>}/><Route path="/services/:id" element={<ServiceDetail/>}/><Route path="/catalog" element={<CatalogPage/>}/><Route path="/catalog/:id" element={<ProductDetail/>}/><Route path="/calculator" element={<CalculatorPage/>}/><Route path="/about" element={<AboutPage/>}/><Route path="/reviews" element={<Reviews/>}/><Route path="/contacts" element={<Contacts/>}/><Route path="/portfolio" element={<PortfolioPage/>}/><Route path="/portfolio/:id" element={<PortfolioDetail/>}/><Route path="*" element={<NotFound/>}/></Routes></main><Modal/></>}
+export default function App(){return <><Header/><main><Routes><Route path="/" element={<Home/>}/><Route path="/services" element={<Services/>}/><Route path="/services/:id" element={<ServiceDetail/>}/><Route path="/catalog" element={<CatalogPage/>}/><Route path="/catalog/:id" element={<ProductDetail/>}/><Route path="/calculator" element={<CalculatorPage/>}/><Route path="/about" element={<AboutPage/>}/><Route path="/reviews" element={<Reviews/>}/><Route path="/contacts" element={<Contacts/>}/><Route path="/portfolio" element={<PortfolioPage/>}/><Route path="/portfolio/:id" element={<PortfolioDetail/>}/><Route path="/login" element={<Login/>}/><Route path="/register" element={<Register/>}/><Route path="/profile" element={<Profile/>}/><Route path="*" element={<NotFound/>}/></Routes></main><Modal/></>}
