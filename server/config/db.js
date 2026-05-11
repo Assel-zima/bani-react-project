@@ -9,6 +9,7 @@ export default async function connectDB() {
   }
 
   try {
+    dns.setServers((process.env.DNS_SERVERS || '8.8.8.8,1.1.1.1').split(','))
     dns.setDefaultResultOrder('ipv4first')
     const connection = await mongoose.connect(mongoUri)
     console.log(`MongoDB connected: ${connection.connection.host}`)

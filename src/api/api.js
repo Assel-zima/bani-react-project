@@ -1,5 +1,13 @@
 const BASE = 'https://dummyjson.com'
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const API_BASE = import.meta.env.VITE_API_URL || getDefaultApiBase()
+
+function getDefaultApiBase() {
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+    return 'https://bani-backend.onrender.com/api'
+  }
+
+  return 'http://localhost:5000/api'
+}
 
 async function request(path, options = {}) {
   const token = localStorage.getItem('bani-token')
