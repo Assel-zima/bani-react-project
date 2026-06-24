@@ -49,7 +49,7 @@ export default function Contacts() {
 
         <div className="contacts-page__grid">
           <aside className="contacts-info">
-            <h2>СВЯЖИТЕСЬ С<br/>НАМИ</h2>
+            <h2>СВЯЖИТЕСЬ<br/>C НАМИ</h2>
             <ul>
               <li><span><FaMapMarkerAlt /></span><p>г. Астана, просп. Кабанбай батыра 11/5<br/>Нұрлы Орда Бизнес - центр</p></li>
               <li><span><FaClock /></span><p>Пн-Пт: 9:00 - 18:00<br/>Сб-Вс - выходные</p></li>
