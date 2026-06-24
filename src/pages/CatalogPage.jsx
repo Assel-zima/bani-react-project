@@ -28,8 +28,8 @@ const sortOptions = [
 ]
 
 const getProjectWhatsappUrl = (title, price) => {
-  const text = `от сайта .alphaedu.tech\nЗдравствуйте! Интересует проект: ${title}. Стоимость: ${price}. Хочу получить консультацию.`
-  return `https://wa.me/77086646240?text=${encodeURIComponent(text)}`
+  const text = `Здравствуйте! Интересует проект: ${title}. Стоимость: ${price}. Хочу получить консультацию.`
+  return `https://wa.me/77053192643?text=${encodeURIComponent(text)}`
 }
 
 export default function CatalogPage() {
