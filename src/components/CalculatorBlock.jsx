@@ -69,7 +69,7 @@ export default function CalculatorBlock() {
     setFormError('')
     const requestText = [
       'Здравствуйте! Заявка с сайта BANI.KZ',
-      'Здравствуйте! Хочу получить расчет стоимости бани.',
+      'Хочу получить расчет стоимости бани.',
       '',
       'Ответы калькулятора:',
       `1. Материал: ${selectedOption || 'не выбран'}`,
