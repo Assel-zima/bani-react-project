@@ -17,8 +17,8 @@ const portfolioWorks = [
 const filters = ['Все', 'Каркасные бани', 'Бани-бочки', 'Бани из бруса', 'Бани из бревна']
 const thumbs = ['contacts-1.jpg', 'contacts-2.jpg', 'contacts-3.jpg', 'contacts-4.jpg']
 const getPortfolioWhatsappUrl = (category) => {
-  const text = `от сайта .alphaedu.tech\nЗдравствуйте! Хочу узнать подробнее о работе из портфолио: ${category}, баня 12x6. Финская.`
-  return `https://wa.me/77086646240?text=${encodeURIComponent(text)}`
+  const text = `Здравствуйте! Хочу узнать подробнее о работе из портфолио: ${category}.`
+  return `https://wa.me/77053192643?text=${encodeURIComponent(text)}`
 }
 
 export default function PortfolioPage() {
