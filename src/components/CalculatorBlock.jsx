@@ -68,7 +68,7 @@ export default function CalculatorBlock() {
     }
     setFormError('')
     const requestText = [
-      'от сайта .alphaedu.tech',
+      'Здравствуйте! Заявка с сайта BANI.KZ',
       'Здравствуйте! Хочу получить расчет стоимости бани.',
       '',
       'Ответы калькулятора:',
@@ -84,7 +84,7 @@ export default function CalculatorBlock() {
     const encodedText = encodeURIComponent(requestText)
     let link = ''
     if (selectedContactMethod === 'WhatsApp') {
-      link = `https://wa.me/77086646240?text=${encodedText}`
+      link = `https://wa.me/77053192643?text=${encodedText}`
     } else if (selectedContactMethod === 'Telegram') {
       link = `https://t.me/your_telegram_username?text=${encodedText}`
     } else {
