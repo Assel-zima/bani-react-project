@@ -35,7 +35,7 @@ export default function Header() {
         <div className="place"><span>📍</span><b>Строим по всему Казахстану</b><br/></div>
         <button className="catalog-download" onClick={scrollToCatalogDownload}><FaDownload aria-hidden="true" /> СКАЧАТЬ КАТАЛОГ С ЦЕНАМИ</button>
         <div className="online"><span>• Пишите, мы онлайн</span><div className="social-links"><a className="social-link social-link--whatsapp" href="https://wa.me/77086646240" aria-label="WhatsApp"><FaWhatsapp /></a><a className="social-link social-link--telegram" href="https://t.me/" aria-label="Telegram"><FaTelegramPlane /></a></div></div>
-        <div className="phone"><small>Звоните Пн-Пт: 9:00 - 18:00</small><b>+7 708 664 62 40</b><button onClick={() => setModalOpen(true)}>Заказать консультацию</button></div>
+        <div className="phone"><small>Звоните Пн-Пт: 9:00 - 18:00</small><b>+7 705 319 26 43</b><button onClick={() => setModalOpen(true)}>Заказать консультацию</button></div>
         </div>
       </div>
       <nav className="main-nav">
