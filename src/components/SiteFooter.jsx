@@ -13,13 +13,13 @@ export default function SiteFooter() {
           <ul className="site-footer__list">
             <li><span><FaMapMarkerAlt /></span><p className="site-footer__address"><span>г. Астана, просп. Кабанбай батыра 11/5</span><span>Нұрлы Орда Бизнес - центр</span></p></li>
             <li><span><FaClock /></span><p>Пн-Пт: 9:00 - 18:00<br/>Сб-Вс - выходные</p></li>
-            <li><span><FaPhoneAlt /></span><p><b>+7 708 664 62 40</b></p></li>
-            <li><span><FaEnvelope /></span><p>aselasa7@gmail.com</p></li>
+            <li><span><FaPhoneAlt /></span><p><b>+7 705 319 26 43</b></p></li>
+            <li><span><FaEnvelope /></span><p>sss@gmail.com</p></li>
           </ul>
           <p className="site-footer__label">Пишите, мы онлайн</p>
           <div className="site-footer__socials">
-            <a href="https://wa.me/77086646240" target="_blank" rel="noreferrer" aria-label="Viber"><FaViber /></a>
-            <a href="https://wa.me/77086646240" target="_blank" rel="noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a href="https://wa.me/77053192643" target="_blank" rel="noreferrer" aria-label="Viber"><FaViber /></a>
+            <a href="https://wa.me/77053192643" target="_blank" rel="noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
             <a href="https://t.me/your_telegram_username" target="_blank" rel="noreferrer" aria-label="Telegram"><FaTelegramPlane /></a>
           </div>
           <p className="site-footer__label">Мы в соцсетях</p>
@@ -66,7 +66,7 @@ export default function SiteFooter() {
         <div className="section-container site-footer__bottom-inner">
           <span>Все права защищены</span>
           <a href="#top">Политика конфиденциальности</a>
-          <span>Сделано с любовью<br/><a href="#top">.alphaedu.tech</a></span>
+          <span>Сделано с любовью<br/><a href="#top">sss</a></span>
         </div>
       </div>
     </footer>
